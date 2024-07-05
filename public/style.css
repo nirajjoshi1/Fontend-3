@@ -1,0 +1,72 @@
+@font-face {
+    font-family: myfont;
+    src: url(Fonts/nene2.ttf);
+}
+
+@font-face {
+    font-family: myyfont;
+    src: url(Fonts/m1.ttf);
+}
+
+:root{
+    --salmon: #EF9D71;
+    --black: #000;
+    --white: #fff;
+    --cyan: #AEDEE1;
+    --dsalamon:rgb(246, 76, 58);
+    --dcyan: #1f2f32;
+
+}
+
+
+
+*::selection {
+    background-color: var(--salmon);
+}
+
+body[theme="black"] {
+    background-color: var(--black);
+}
+
+body[theme="black"] .section {
+    color: var(--white);
+}
+
+body[theme="cyan"] {
+    background-color: var(--cyan);
+}
+
+body[theme="cyan"] .section {
+    color: var(--dcyan);
+}
+
+body[theme="salamon"] {
+    background-color: var(--salmon);
+}
+
+body[theme="salamon"].section {
+    color: var(--dsalamon);
+}
+
+body[theme="white"] {
+    background-color: var(--white);
+}
+
+body[theme="white"] .section {
+    color: var(--black);
+}
+
+
+.viddiv{
+    clip-path: circle(var(--clip) at 50% 50%);
+}
+
+
+
+.card{
+        transition: all 0.4s ease-in-out;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+}
